@@ -7,7 +7,7 @@ The Gulp wrapper around [Pattern Lab Node Core](https://github.com/pattern-lab/p
 The Gulp Edition comes with the following components:
 
 * `patternlab-node`: [GitHub](https://github.com/pattern-lab/patternlab-node), [npm](https://www.npmjs.com/package/patternlab-node)
-* `patternengine-node-mustache`: [GitHub](https://github.com/pattern-lab/patternengine-node-mustache), [npm](https://www.npmjs.com/package/patternengine-node-mustache)
+* `patternengine-node-handlebars`: [GitHub](https://github.com/geoffp/patternengine-node-handlebars), [npm](https://www.npmjs.com/package/patternengine-node-handlebars)
 
 ## Prerequisites
 
@@ -55,9 +55,3 @@ To watch for changes, re-generate the front-end, and server it via a BrowserSync
     gulp patternlab:serve
 
 BrowserSync should open [http://localhost:3000](http://localhost:3000) in your browser.
-
-### List all of the available commands
-
-To list all available commands type:
-
-    gulp patternlab:help
