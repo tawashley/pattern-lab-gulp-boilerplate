@@ -54,4 +54,4 @@ To watch for changes, re-generate the front-end, and server it via a BrowserSync
 
     gulp patternlab:serve
 
-BrowserSync should open [http://localhost:3000](http://localhost:3000) in your browser.
+BrowserSync should open [http://localhost:8080](http://localhost:8080) in your browser.
