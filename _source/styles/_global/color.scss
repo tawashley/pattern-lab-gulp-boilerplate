@@ -1,0 +1,24 @@
+//Variables for colors
+$c-pallette: (
+white: 		    #fff,
+black:		    #000,
+dark-grey:    #333,
+);
+
+// Return a color from the colour use list
+$c-error : #f00;
+@function get-color($name) {
+    @if not map-has-key($c-pallette, $name) {
+        @warn "The color `#{$name}` is not defined.";
+        @return $c-error;
+    }
+
+    @return map-get($c-pallette, $name);
+}
+
+//global variables
+
+// NEUTRAL
+$c-white:           get-color(white);
+$c-black:           get-color(black);
+$c-dark-grey:       get-color(dark-grey);

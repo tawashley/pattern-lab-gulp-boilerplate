@@ -1,0 +1,21 @@
+$xsmall: 				380px;
+$small: 				460px;
+$med: 					725px;
+$large: 				960px;
+$xl: 				  	1020px;
+$xxl: 				  1200px;
+$max: 		  	  1400px;
+
+$d-baseline: 10px;
+
+* {box-sizing: border-box;}
+
+html {
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	font-size: remify(16px);
+  line-height: 1.4;
+}

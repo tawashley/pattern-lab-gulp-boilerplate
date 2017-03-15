@@ -1,0 +1,11 @@
+{
+  "button": {
+    "text": "Go to styleguide",
+    "href": "/styleguide",
+    "isAdmin": true
+  },
+  "button2": {
+    "text": "Go to styleguide addafsd fdsfds fsdfsd fdsfsd fsd",
+    "href": "/styleguide"
+  }
+}

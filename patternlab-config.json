@@ -1,0 +1,77 @@
+{
+  "paths": {
+    "source": {
+      "root": "./_source/",
+      "patterns": "./_source/_patternlab/_patterns/",
+      "data": "./_source/_patternlab/_data/",
+      "meta": "./_source/_patternlab/_meta/",
+      "annotations": "./_source/_patternlab/_annotations/",
+      "styleguide": "./node_modules/styleguidekit-assets-default/dist/",
+      "patternlabFiles": "./node_modules/styleguidekit-mustache-default/views/",
+      "js": "./_source/scripts",
+      "images": "./_source/images",
+      "fonts": "./_source/fonts",
+      "css": "./_source/_patternlab/pattern-scaffolding.css"
+    },
+    "public": {
+      "root": "./build/styleguide",
+      "patterns": "./build/styleguide/patterns/",
+      "data": "./build/styleguide/styleguide/data/",
+      "annotations": "./build/styleguide/annotations/",
+      "styleguide": "./build/styleguide/styleguide/",
+      "js": "./build/styleguide/scripts",
+      "images": "./build/styleguide/images",
+      "fonts": "./build/styleguide/fonts",
+      "css": "./build/styleguide/css"
+    }
+  },
+  "styleGuideExcludes": [],
+  "defaultPattern": "all",
+  "defaultShowPatternInfo": false,
+  "cleanPublic": false,
+  "patternExtension": "hbs",
+  "ignored-extensions": [
+    "scss",
+    "DS_Store",
+    "less"
+  ],
+  "ignored-directories": [
+    "scss"
+  ],
+  "debug": false,
+  "ishControlsHide": {
+    "s": false,
+    "m": false,
+    "l": false,
+    "full": false,
+    "random": false,
+    "disco": false,
+    "hay": true,
+    "mqs": false,
+    "find": false,
+    "views-all": false,
+    "views-annotations": false,
+    "views-code": false,
+    "views-new": false,
+    "tools-all": false,
+    "tools-docs": false
+  },
+  "ishMinimum": "320",
+  "ishMaximum": "2600",
+  "patternStateCascade": [
+    "inprogress",
+    "inreview",
+    "complete"
+  ],
+  "patternStates": {},
+  "patternExportPatternPartials": ["pages-homepage"],
+  "patternExportDirectory": "./pattern_exports/",
+  "cacheBust": true,
+  "starterkitSubDir": "dist",
+  "outputFileSuffixes": {
+    "rendered": ".rendered",
+    "rawTemplate": "",
+    "markupOnly": ".markup-only"
+  },
+  "cleanOutputHtml": true
+}
