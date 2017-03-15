@@ -114,12 +114,12 @@ function getConfiguredCleanOption() {
 }
 
 function build(done) {
-  //@TODO - expand on handlebars helpers :)
-  // var hbs = require('./node_modules/patternengine-node-handlebars/lib/engine_handlebars.js');
-  //
-  // hbs.engine.registerHelper('testHelper', function() {
-  //     return '<h1>HELPER IS WORKING!!!!111111</h1>';
-  // });
+  var hbs = require('./node_modules/patternengine-node-handlebars/lib/engine_handlebars.js');
+  var helpers = require('./handlebarsHelpers.js');
+
+  Object.keys(helpers).forEach(function(helperName) {
+    hbs.engine.registerHelper(helperName, helpers[helperName]);
+  });
 
   patternlab(config).build(done, getConfiguredCleanOption());
 }
