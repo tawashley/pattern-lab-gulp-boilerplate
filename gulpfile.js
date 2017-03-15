@@ -158,35 +158,6 @@ gulp.task('pl-assets', gulp.series(
   })
 );
 
-// gulp.task('patternlab:version', function (done) {
-//   patternlab.version();
-//   done();
-// });
-//
-// gulp.task('patternlab:help', function (done) {
-//   patternlab.help();
-//   done();
-// });
-//
-// gulp.task('patternlab:patternsonly', function (done) {
-//   patternlab.patternsonly(done, getConfiguredCleanOption());
-// });
-//
-// gulp.task('patternlab:liststarterkits', function (done) {
-//   patternlab.liststarterkits();
-//   done();
-// });
-//
-// gulp.task('patternlab:loadstarterkit', function (done) {
-//   patternlab.loadstarterkit(argv.kit, argv.clean);
-//   done();
-// });
-//
-// gulp.task('patternlab:installplugin', function (done) {
-//   patternlab.installplugin(argv.plugin);
-//   done();
-// });
-
 gulp.task('patternlab:build', gulp.series('clean', 'sass-generate-contents', 'sass', 'pl-assets', build, 'compile-html-pages', function(done){
   done();
 }));
